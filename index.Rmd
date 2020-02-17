@@ -11,7 +11,7 @@ biblio-style: apalike
 link-citations: yes
 nocite: |
   @Eritja2017, @Palmer2017, @millet2017imported, @ceccaroni2016analyzing, @rodriguez2016machine, @collantes2016updating, @delacour2016primera, @oltra2016atrapaeltigre, @kampen2015approaches, @delacour2014primera, @bartumeus2018citizen
-github-repo: GlobalMosquitoAlert/guides-pillar1/blob/master/
+github-repo: GlobalMosquitoAlert/guides-pillar1
 description: "Best practices guide for Pillar 1 of the GMAC toolkit: Real-Time Targeted Vector Mosquito Monitoring."
 ---
 

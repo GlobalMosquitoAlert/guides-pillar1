@@ -6,7 +6,7 @@ bookdown::gitbook:
         <li><a href="./">Real-Time Targeted Vector Mosquito Monitoring</a></li>
       after: |
         <li><a href="https://github.com/GlobalMosquitoAlert/guides-pillar1" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/GlobalMosquitoAlert/guides-pillar1/master/%s
+    edit: https://github.com/GlobalMosquitoAlert/guides-pillar1/blob/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
