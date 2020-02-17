@@ -1,0 +1,3 @@
+# Existing Tools
+
+The Mosquito Alert system can be used by anyone in the world and it is possible for specific projects to make use of this directly, tracking their own data through the use of hashtags entered in the participant note section or through other mechanisms. All of the Mosquito Alert code for mobile device applications as well as server-side processes is free and open source (GPLv3), available at https://github.com/MoveLab.

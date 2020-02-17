@@ -1,0 +1,12 @@
+# Pillar Objectives {#objectives}
+
+The objectives of this pillar are to:
+
+* facilitate identification and reporting of targeted adult disease-vector mosquitoes by citizen scientists;
+* validate and analyze this citizen science data;
+* produce real time and reliable scientific data and models for management and risk evaluation. 
+
+In addition to these objectives, this pillar includes the cross-cutting objective of
+
+* engaging citizen scientists in the fight against disease vector mosquitoes by helping them to better understand the problem and solutions;
+* obtaining feedback from citizen scientists about monitoring and control strategies. 

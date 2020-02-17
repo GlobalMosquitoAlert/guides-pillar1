@@ -1,0 +1,25 @@
+--- 
+title: "Real-Time Targeted Vector Mosquito Monitoring"
+subtitle: "Best Practices Guide"
+author: "Global Mosquito Alert Consortium"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: article
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+nocite: |
+  @Eritja2017, @Palmer2017, @millet2017imported, @ceccaroni2016analyzing, @rodriguez2016machine, @collantes2016updating, @delacour2016primera, @oltra2016atrapaeltigre, @kampen2015approaches, @delacour2014primera, @bartumeus2018citizen
+github-repo: GlobalMosquitoAlert/guides-pillar1
+description: "Best practices guide for Pillar 1 of the GMAC toolkit: Real-Time Targeted Vector Mosquito Monitoring."
+---
+
+# {-}
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://gmac.github.com/best_practices/pillar1'}
+knitr::include_graphics('images/cover.jpg', dpi = NA)
+```
+
+![Creative Commons License](images/by-nc-sa.png)  
+The online version of this book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). 

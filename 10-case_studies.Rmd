@@ -1,0 +1,7 @@
+# Case Studies
+
+Existing projects most relevant to this pillar include:
+
+* Mosquito Alert (http://mosquitoalert.com)
+
+* iNaturalist (http://www.inaturalist.org/) with example projects including (https://www.inaturalist.org/projects/mosquitoes-in-hawaii).

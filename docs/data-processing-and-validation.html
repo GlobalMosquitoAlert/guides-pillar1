@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Data Processing and Validation | Real-Time Targeted Vector Mosquito Monitoring</title>
+  <meta name="description" content="Best practices guide for Pillar 1 of the GMAC toolkit: Real-Time Targeted Vector Mosquito Monitoring." />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Data Processing and Validation | Real-Time Targeted Vector Mosquito Monitoring" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Best practices guide for Pillar 1 of the GMAC toolkit: Real-Time Targeted Vector Mosquito Monitoring." />
+  <meta name="github-repo" content="GlobalMosquitoAlert/guides-pillar1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Data Processing and Validation | Real-Time Targeted Vector Mosquito Monitoring" />
+  
+  <meta name="twitter:description" content="Best practices guide for Pillar 1 of the GMAC toolkit: Real-Time Targeted Vector Mosquito Monitoring." />
+  
+
+<meta name="author" content="Global Mosquito Alert Consortium" />
+
+
+<meta name="date" content="2020-02-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-collection.html"/>
+<link rel="next" href="data-presentation-and-use.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Real-Time Targeted Vector Mosquito Monitoring</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Pillar Objectives</a></li>
+<li class="chapter" data-level="3" data-path="citizen-scientist-roles-and-motivations.html"><a href="citizen-scientist-roles-and-motivations.html"><i class="fa fa-check"></i><b>3</b> Citizen Scientist Roles and Motivations</a></li>
+<li class="chapter" data-level="4" data-path="ethics.html"><a href="ethics.html"><i class="fa fa-check"></i><b>4</b> Ethics</a></li>
+<li class="chapter" data-level="5" data-path="data-collection.html"><a href="data-collection.html"><i class="fa fa-check"></i><b>5</b> Data Collection</a></li>
+<li class="chapter" data-level="6" data-path="data-processing-and-validation.html"><a href="data-processing-and-validation.html"><i class="fa fa-check"></i><b>6</b> Data Processing and Validation</a><ul>
+<li class="chapter" data-level="6.1" data-path="data-processing-and-validation.html"><a href="data-processing-and-validation.html#participant-error-checking-and-revision"><i class="fa fa-check"></i><b>6.1</b> Participant Error-Checking and Revision</a></li>
+<li class="chapter" data-level="6.2" data-path="data-processing-and-validation.html"><a href="data-processing-and-validation.html#sampling-effort-collection"><i class="fa fa-check"></i><b>6.2</b> Sampling Effort Collection</a></li>
+<li class="chapter" data-level="6.3" data-path="data-processing-and-validation.html"><a href="data-processing-and-validation.html#report-validation"><i class="fa fa-check"></i><b>6.3</b> Report Validation</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html"><i class="fa fa-check"></i><b>7</b> Data Presentation and Use</a><ul>
+<li class="chapter" data-level="7.1" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html#end-users-and-requirements"><i class="fa fa-check"></i><b>7.1</b> End-users and requirements</a></li>
+<li class="chapter" data-level="7.2" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html#data-presentation-to-public-and-specific-end-users"><i class="fa fa-check"></i><b>7.2</b> Data presentation to public and specific end users</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html#general-public"><i class="fa fa-check"></i><b>7.2.1</b> General Public:</a></li>
+<li class="chapter" data-level="7.2.2" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html#public-health-managers"><i class="fa fa-check"></i><b>7.2.2</b> Public Health Managers:</a></li>
+<li class="chapter" data-level="7.2.3" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html#educators"><i class="fa fa-check"></i><b>7.2.3</b> Educators:</a></li>
+<li class="chapter" data-level="7.2.4" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html#academics"><i class="fa fa-check"></i><b>7.2.4</b> Academics:</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html#data-use-for-vector-management-and-research"><i class="fa fa-check"></i><b>7.3</b> Data use for vector management and research</a></li>
+<li class="chapter" data-level="7.4" data-path="data-presentation-and-use.html"><a href="data-presentation-and-use.html#data-licensing"><i class="fa fa-check"></i><b>7.4</b> Data Licensing</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="data-structures-and-repository-links.html"><a href="data-structures-and-repository-links.html"><i class="fa fa-check"></i><b>8</b> Data Structures and Repository Links</a></li>
+<li class="chapter" data-level="9" data-path="existing-tools.html"><a href="existing-tools.html"><i class="fa fa-check"></i><b>9</b> Existing Tools</a></li>
+<li class="chapter" data-level="10" data-path="case-studies.html"><a href="case-studies.html"><i class="fa fa-check"></i><b>10</b> Case Studies</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/GlobalMosquitoAlert/guides-pillar1" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Real-Time Targeted Vector Mosquito Monitoring</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-processing-and-validation" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Data Processing and Validation</h1>
+<p>Data collected by participants must be processed and validated before it can be usefully analyzed. Processing entails, at a minimum, combining reports into a centralized database; ideally it should also include some mechanism for validation and error-correction. Mosquito Alert relies on a central server with a set of Django/Python-based web applications that handle this process as well as providing front-end portals for interface by various types of participants (general public, expert validators, etc.).</p>
+<div id="participant-error-checking-and-revision" class="section level2">
+<h2><span class="header-section-number">6.1</span> Participant Error-Checking and Revision</h2>
+<p>One component related to error-checking is ensuring that participants have the ability to change or even delete reports after sending them. Participants may at times accidentally mark the wrong location or enter some other erroneous information and the system should enable them to make changes. Mosquito Alert does this by allowing multiple versions of each report; all are stored for future reference but only the most recent is used in analysis and dissemination.</p>
+</div>
+<div id="sampling-effort-collection" class="section level2">
+<h2><span class="header-section-number">6.2</span> Sampling Effort Collection</h2>
+<p>Another component is the collection and analysis of information about participants’ sampling effort. This information can be used to correct biases resulting from the uneven distribution of sampling activity across space and time. It is important to be able to determine, for example, whether no reports have been received from a particular town because there are no target species there or because there are no participants looking there; conversely, one must determine if a town that has lots of reports has elevated mosquito presence or simply many participants.</p>
+<p>In Mosquito Alert, this is done by collecting a small amount of location information from participants. Unless they opt out of this feature, the Mosquito Alert application uses the network and satellite location services on participants’ mobile devices to detect their locations 5 times per day. The times are randomly selected independently by each device each day during the hours when targeted species are most likely to be biting. As noted above in the ethics section, the device does not share the detected location itself with the central server, but instead shares only the identifier of the pre-defined sampling cell into which it falls. For computational efficiency (to reduce battery drain on the device), the sampling cell grid is defined simply by evenly spaced latitude and longitude divisions (initially 0.05 degrees each; currently 0.025 degrees each).</p>
+<p>One lesson learned by the Mosquito Alert project is that participant location provides only part of the picture in terms of sampling effort. If it also important to know when participants are actually in a position to observe and report targeted mosquitoes. Our experience is that most people install the application on their device and use it briefly but stop interacting with it after a relatively short period of time. There is also large variation among participants in the amount of time they spend using the application. We therefore model what we call “reporting propensity” as a function of time elapsed since installation of the application and intrinsic motivation. We then adjust sampling effort based on the reporting propensity of each participant. The process is complicated by the fact that we do not link background tracking information with reporting information (for privacy reasons). The results, however, have proven to be effective.</p>
+</div>
+<div id="report-validation" class="section level2">
+<h2><span class="header-section-number">6.3</span> Report Validation</h2>
+<p>The validation stage is important as a way to directly check that the reported mosquitoes are targeted species and to provide a basis for assessing participants’ proficiency. The latter outcome improves the possibilities for making accurate inferences about the reliability of reports from these participants that are not validated: Many participants will send some reports that include a photograph that can be used for validation and others that do not (either no photograph or none in which the specimen can be clearly seen). The expert validation of the first category of report facilitates inferences about the second.</p>
+<p>There are a number of different ways of carrying out validation, and the choice among them will depend on local circumstances as well as evolving research on what works best. The primary approach of Mosquito Alert is to rely on a team of 9 entomologists who review reports from citizen scientists through a special expert validation portal. Each report is reviewed independently by 3 of these entomologists. In addition to selecting a category indicating their level of confidence in the report being of a targeted species, the entomologists are also able to write internal notes and notes to the citizen scientist. They are also able to flag the report for review by the entomology team’s leader, who can override any final decision.</p>
+<p>Another approach to validation is to rely on other citizen scientists to review photographs. Mosquito Alert also uses this approach, sending each photograph to 30 different citizen scientists using the Crowd Crafting platform (which is accessed through the application directly on through a web browser).</p>
+<p>Another project that has had success with this type of crowd-based validation approach is iNaturalist. That platform also allows much more interaction between citizen-science validators and the person making the original report (known as an observation) in a threaded conversation at the record level. Validated records arise from agreement between ‘identifiers’ leading the record to gain a data quality classification. It also provides an effective mechanism for cultivating citizen scientists to develop expertise in identifying certain specifies and thus improve their validation proficiency.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-collection.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-presentation-and-use.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/GlobalMosquitoAlert/guides-pillar1/master/06-data_processing.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["gmac_guides_pillar1.pdf", "gmac_guides_pillar1.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+# Data Structures and Repository Links
+
+The Mosquito Alert data is stored in a SQL database (PostgreSQL/PostGIS) that is managed by the Django/Python server layer. It is exported daily to Zenodo at http://doi.org/10.5281/zenodo.597466. The project has also set up a mechanism to share the data regularly with GBIF (see https://www.gbif.org/es/dataset/1fef1ead-3d02-495e-8ff1-6aeb01123408). It is also exploring the possibility of linking the application to iNaturalist so that participants’ observations can be viewed in real time by the iNaturalist community. 
+
+The primary unit of observation for the Mosquito Alert data is a report-version. Each time a participant creates a new report or edits or deletes an existing report, a new report-version record is created. Different versions of the same report are linked by a unique report UUID automatically assigned to each report when it is created.
+Each report-version is linked to the set of photographs that the participant included with the report, and to the participant’s answers to the three taxonomic questions designed as a first check of validity. One important point here is that the application sends both the answer to the question and the question, both written as posed to the participant in whatever language the participant was using. Both pieces of information (question and answer in original language) are stored in the database. This makes it possible to deal with updates over time in the language used in the applications and to identify possibly errors or sources of confusion that might be affecting data quality.
+
+The most recent version of each report is sent to the expert validation system (and if new versions come in after validation, they are sent again). The validation results are then linked to the report-version (each report version also has its own unique UUID).
+
+Reports are also linked to participants through a unique reporting UUID assigned by the application to each participant when they register. Data on participants includes registration time, which is used in the sampling effort model.
+
+The background tracking data is stored in its own table, which contains a unique user UUID for background tracking purposes (different from the reporting UUID).
