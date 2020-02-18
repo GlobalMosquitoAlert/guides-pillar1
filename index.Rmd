@@ -17,7 +17,7 @@ description: "Best practices guide for Pillar 1 of the GMAC toolkit: Real-Time T
 
 # {-}
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://gmac.github.com/best_practices/pillar1'}
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
 knitr::include_graphics('images/cover.jpg', dpi = NA)
 ```
 
